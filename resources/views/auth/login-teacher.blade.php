@@ -14,6 +14,7 @@
         <h4 class="text-center mb-5"><strong>Login as</strong></h4>
         @include('auth.tab')
 
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
 

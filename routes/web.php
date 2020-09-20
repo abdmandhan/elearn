@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/login/teacher', function () {
+    return view('auth.login-teacher');
+})->name('login.teacher');
+
+Route::get('/login/student', function () {
+    return view('auth.login-student');
+})->name('login.student');
+
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
 });
