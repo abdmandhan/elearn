@@ -15,7 +15,7 @@
         @include('auth.tab')
 
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="{{ route('login.teacher') }}">
             @csrf
 
             <div>

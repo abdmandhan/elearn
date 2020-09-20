@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'web-teacher' => [
+            'driver' => 'session',
+            'provider' => 'teachers',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -69,6 +74,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'teachers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Teacher::class,
         ],
 
         // 'users' => [
