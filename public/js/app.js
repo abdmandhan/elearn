@@ -3035,6 +3035,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3057,15 +3097,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     switchToTeam: function switchToTeam(team) {
-      this.$inertia.put('/current-team', {
-        'team_id': team.id
+      this.$inertia.put("/current-team", {
+        team_id: team.id
       }, {
         preserveState: false
       });
     },
     logout: function logout() {
-      axios.post('/logout').then(function (response) {
-        window.location = '/';
+      axios.post("/logout").then(function (response) {
+        window.location = "/";
       });
     }
   },
@@ -3432,12 +3472,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
     Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: {
+    user: Object
   }
 });
 
@@ -4964,6 +5019,23 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Test.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -25858,11 +25930,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "dashboard"
                       }
                     },
-                    [
-                      _vm._v(
-                        "\n                            Dashboard\n                        "
-                      )
-                    ]
+                    [_vm._v("Dashboard")]
                   )
                 ],
                 1
@@ -25915,32 +25983,20 @@ var render = function() {
                                   staticClass:
                                     "block px-4 py-2 text-xs text-gray-400"
                                 },
-                                [
-                                  _vm._v(
-                                    "\n                                    Manage Account\n                                "
-                                  )
-                                ]
+                                [_vm._v("Manage Account")]
                               ),
                               _vm._v(" "),
                               _c(
                                 "jet-dropdown-link",
                                 { attrs: { href: "/user/profile" } },
-                                [
-                                  _vm._v(
-                                    "\n                                    Profile\n                                "
-                                  )
-                                ]
+                                [_vm._v("Profile")]
                               ),
                               _vm._v(" "),
                               _vm.$page.jetstream.hasApiFeatures
                                 ? _c(
                                     "jet-dropdown-link",
                                     { attrs: { href: "/user/api-tokens" } },
-                                    [
-                                      _vm._v(
-                                        "\n                                    API Tokens\n                                "
-                                      )
-                                    ]
+                                    [_vm._v("API Tokens")]
                                   )
                                 : _vm._e(),
                               _vm._v(" "),
@@ -25956,11 +26012,7 @@ var render = function() {
                                         staticClass:
                                           "block px-4 py-2 text-xs text-gray-400"
                                       },
-                                      [
-                                        _vm._v(
-                                          "\n                                        Manage Team\n                                    "
-                                        )
-                                      ]
+                                      [_vm._v("Manage Team")]
                                     ),
                                     _vm._v(" "),
                                     _c(
@@ -25972,22 +26024,14 @@ var render = function() {
                                             _vm.$page.user.current_team.id
                                         }
                                       },
-                                      [
-                                        _vm._v(
-                                          "\n                                        Team Settings\n                                    "
-                                        )
-                                      ]
+                                      [_vm._v("Team Settings")]
                                     ),
                                     _vm._v(" "),
                                     _vm.$page.jetstream.canCreateTeams
                                       ? _c(
                                           "jet-dropdown-link",
                                           { attrs: { href: "/teams/create" } },
-                                          [
-                                            _vm._v(
-                                              "\n                                        Create New Team\n                                    "
-                                            )
-                                          ]
+                                          [_vm._v("Create New Team")]
                                         )
                                       : _vm._e(),
                                     _vm._v(" "),
@@ -26001,11 +26045,7 @@ var render = function() {
                                         staticClass:
                                           "block px-4 py-2 text-xs text-gray-400"
                                       },
-                                      [
-                                        _vm._v(
-                                          "\n                                        Switch Teams\n                                    "
-                                        )
-                                      ]
+                                      [_vm._v("Switch Teams")]
                                     ),
                                     _vm._v(" "),
                                     _vm._l(_vm.$page.user.all_teams, function(
@@ -26100,11 +26140,7 @@ var render = function() {
                                   _c(
                                     "jet-dropdown-link",
                                     { attrs: { as: "button" } },
-                                    [
-                                      _vm._v(
-                                        "\n                                        Logout\n                                    "
-                                      )
-                                    ]
+                                    [_vm._v("Logout")]
                                   )
                                 ],
                                 1
@@ -26200,7 +26236,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "dashboard"
                     }
                   },
-                  [_vm._v("\n                    Dashboard\n                ")]
+                  [_vm._v("Dashboard")]
                 )
               ],
               1
@@ -26245,11 +26281,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "profile.show"
                       }
                     },
-                    [
-                      _vm._v(
-                        "\n                        Profile\n                    "
-                      )
-                    ]
+                    [_vm._v("Profile")]
                   ),
                   _vm._v(" "),
                   _vm.$page.jetstream.hasApiFeatures
@@ -26262,11 +26294,7 @@ var render = function() {
                               _vm.$page.currentRouteName == "api-tokens.index"
                           }
                         },
-                        [
-                          _vm._v(
-                            "\n                        API Tokens\n                    "
-                          )
-                        ]
+                        [_vm._v("API Tokens")]
                       )
                     : _vm._e(),
                   _vm._v(" "),
@@ -26285,11 +26313,7 @@ var render = function() {
                       _c(
                         "jet-responsive-nav-link",
                         { attrs: { as: "button" } },
-                        [
-                          _vm._v(
-                            "\n                            Logout\n                        "
-                          )
-                        ]
+                        [_vm._v("Logout")]
                       )
                     ],
                     1
@@ -26304,11 +26328,7 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [
-                            _vm._v(
-                              "\n                            Manage Team\n                        "
-                            )
-                          ]
+                          [_vm._v("Manage Team")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -26319,11 +26339,7 @@ var render = function() {
                               active: _vm.$page.currentRouteName == "teams.show"
                             }
                           },
-                          [
-                            _vm._v(
-                              "\n                            Team Settings\n                        "
-                            )
-                          ]
+                          [_vm._v("Team Settings")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -26335,11 +26351,7 @@ var render = function() {
                                 _vm.$page.currentRouteName == "teams.create"
                             }
                           },
-                          [
-                            _vm._v(
-                              "\n                            Create New Team\n                        "
-                            )
-                          ]
+                          [_vm._v("Create New Team")]
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "border-t border-gray-200" }),
@@ -26349,11 +26361,7 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [
-                            _vm._v(
-                              "\n                            Switch Teams\n                        "
-                            )
-                          ]
+                          [_vm._v("Switch Teams")]
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.$page.user.all_teams, function(team) {
@@ -27166,7 +27174,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Dashboard\n        ")]
+                [_vm._v("Dashboard")]
               )
             ]
           },
@@ -27181,8 +27189,31 @@ var render = function() {
           _c(
             "div",
             { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("welcome")],
-            1
+            [
+              _vm._v("\n        " + _vm._s(_vm.user.name) + "\n        "),
+              _c(
+                "svg",
+                {
+                  staticClass: "h-10 w-10 text-red-500",
+                  attrs: {
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    stroke: "currentColor"
+                  }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      "stroke-width": "2",
+                      d:
+                        "M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                    }
+                  })
+                ]
+              )
+            ]
           )
         ])
       ])
@@ -29757,6 +29788,30 @@ var render = function() {
       true
     )
   })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test.vue?vue&type=template&id=430422bb&":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Test.vue?vue&type=template&id=430422bb& ***!
+  \**************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_vm._v("TEST")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -41934,7 +41989,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nTypeError: text.forEach is not a function\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\extract-text-webpack-plugin\\dist\\loader.js:145:16\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compiler.js:343:11\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compiler.js:681:15\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:24:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compiler.js:678:31\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1423:35\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1414:32\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1409:36\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1405:32\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at Compilation.seal (C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1342:27)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compiler.js:675:18\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1261:4\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at AsyncSeriesHook.lazyCompileHook (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at Compilation.finish (C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1253:28)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compiler.js:672:17\n    at eval (eval at create (C:\\xampp2\\htdocs\\elearn\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:11:1)\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1185:12\n    at C:\\xampp2\\htdocs\\elearn\\node_modules\\webpack\\lib\\Compilation.js:1097:9\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -43498,7 +43553,9 @@ var map = {
 	"./Teams/TeamMemberManager": "./resources/js/Pages/Teams/TeamMemberManager.vue",
 	"./Teams/TeamMemberManager.vue": "./resources/js/Pages/Teams/TeamMemberManager.vue",
 	"./Teams/UpdateTeamNameForm": "./resources/js/Pages/Teams/UpdateTeamNameForm.vue",
-	"./Teams/UpdateTeamNameForm.vue": "./resources/js/Pages/Teams/UpdateTeamNameForm.vue"
+	"./Teams/UpdateTeamNameForm.vue": "./resources/js/Pages/Teams/UpdateTeamNameForm.vue",
+	"./Test": "./resources/js/Pages/Test.vue",
+	"./Test.vue": "./resources/js/Pages/Test.vue"
 };
 
 
@@ -44558,6 +44615,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Test.vue":
+/*!*************************************!*\
+  !*** ./resources/js/Pages/Test.vue ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Test.vue?vue&type=template&id=430422bb& */ "./resources/js/Pages/Test.vue?vue&type=template&id=430422bb&");
+/* harmony import */ var _Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Test.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Test.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Test.vue?vue&type=script&lang=js&":
+/*!**************************************************************!*\
+  !*** ./resources/js/Pages/Test.vue?vue&type=script&lang=js& ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Test.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Test.vue?vue&type=template&id=430422bb&":
+/*!********************************************************************!*\
+  !*** ./resources/js/Pages/Test.vue?vue&type=template&id=430422bb& ***!
+  \********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Test.vue?vue&type=template&id=430422bb& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test.vue?vue&type=template&id=430422bb&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_430422bb___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -44575,9 +44701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var laravel_jetstream__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(laravel_jetstream__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var portal_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! portal-vue */ "./node_modules/portal-vue/dist/portal-vue.common.js");
 /* harmony import */ var portal_vue__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(portal_vue__WEBPACK_IMPORTED_MODULE_3__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../css/app'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-
 
 
 
@@ -44610,20 +44734,8 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 /***/ (function(module, exports, __webpack_require__) {
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
- */
-
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-// import Echo from 'laravel-echo';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'; // import Echo from 'laravel-echo';
 // window.Pusher = require('pusher-js');
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',

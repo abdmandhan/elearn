@@ -16,7 +16,7 @@
         "@tailwindcss/ui": "^0.1.3",
         "axios": "^0.19",
         "cross-env": "^7.0",
-        "css-loader": "^4.3.0",
+        "css-loader": "^3.6.0",
         "laravel-jetstream": "^0.0.3",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.19",
@@ -28,6 +28,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "imagemin": "^7.0.1"
+        "imagemin": "^7.0.1",
+        "vuetify": "^2.3.10"
     }
 }
